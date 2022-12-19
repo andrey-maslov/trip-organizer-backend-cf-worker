@@ -1,0 +1,21 @@
+name = "trip-organizer-backend"
+type = "javascript"
+compatibility_date = "2022-12-19"
+
+account_id = "8e60b043a57d93814952b8d271fe2b53"
+workers_dev = true # or zone_id = "<ZONE ID>" if you have one
+
+[build]
+command = "npm run build"
+
+[build.upload]
+dir = "build"
+main = "./index.mjs"
+format = "modules"
+
+[vars]
+REALM_APPID = "trip-organizer-haqgl"
+
+[env.development.vars]
+ENVIRONMENT = "development"
+REALM_APPID = "trip-organizer-haqgl"
